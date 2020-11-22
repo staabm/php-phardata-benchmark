@@ -1,5 +1,7 @@
 This repo contains [a repro-benchmark](https://github.com/staabm/php-phardata-benchmark/blob/master/bench.php) to show how slow PharData is compared to a simple userland library.
 
+we see PharData beeing roughly 10x slower then the userland library [splitbrain/php-archive](https://github.com/splitbrain/php-archive).
+
 See the following testruns on my windows10 x64 notebook:
 
 ```bash
@@ -42,3 +44,5 @@ duration: 1.0401749610901
 Start using splitbrain/php-archive
 duration: 0.088247776031494
 ```
+
+the same is true when GZIP is activated.
