@@ -1,4 +1,4 @@
-This repo contains a repro-benchmark to show how slow PharData is compared to a simple userland library.
+This repo contains [a repro-benchmark](https://github.com/staabm/php-phardata-benchmark/blob/master/bench.php) to show how slow PharData is compared to a simple userland library.
 
 See the following testruns on my windows10 x64 notebook:
 
