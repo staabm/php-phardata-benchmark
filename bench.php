@@ -2,6 +2,7 @@
 
 require 'vendor/autoload.php';
 
+@unlink('phardata.tar.gz');
 echo "Start using PharData\n";
 $start = microtime(true);
 
@@ -17,6 +18,7 @@ echo "duration: ". (microtime(true) - $start) ."\n";
 
 echo "\n\n";
 
+@unlink('splitbrain.tar');
 echo "Start using splitbrain/php-archive\n";
 $start = microtime(true);
 
