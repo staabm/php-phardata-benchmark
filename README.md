@@ -2,6 +2,31 @@ This repo contains [a repro-benchmark](https://github.com/staabm/php-phardata-be
 
 we see PharData beeing roughly 10x slower then the userland library [splitbrain/php-archive](https://github.com/splitbrain/php-archive).
 
+## profilled using blackfire
+
+```bash
+blackfire run php bench.php
+
+Start using PharData
+duration: 0.68688011169434
+
+
+Start using splitbrain/php-archive
+duration: 0.25864601135254
+
+
+Memory       1.22MB
+Wall Time     992ms
+I/O Wait      581ms
+CPU Time      412ms
+Network         n/a     n/a     n/a
+SQL             n/a     n/a
+
+```
+
+![image](https://user-images.githubusercontent.com/47448731/99962209-0fe2e280-2d90-11eb-825a-77038a0447bf.png)
+
+
 ## See the following testruns on my windows10 x64 notebook:
 
 ```bash
