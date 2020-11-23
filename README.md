@@ -91,3 +91,69 @@ Start using splitbrain/php-archive
 duration: 0.022264003753662
 ```
 
+## tested on ubuntu20
+
+```bash
+$ php -v
+PHP 7.4.12 (cli) (built: Oct 31 2020 17:04:25) ( NTS )
+Copyright (c) The PHP Group
+Zend Engine v3.4.0, Copyright (c) Zend Technologies
+    with Zend OPcache v7.4.12, Copyright (c), by Zend Technologies
+    with Xdebug v2.9.8, Copyright (c) 2002-2020, by Derick Rethans
+    with blackfire v1.44.0~linux-x64-non_zts74, https://blackfire.io, by Blackfire
+
+
+$ php bench.php
+Start using PharData
+duration: 0.68476390838623
+
+
+Start using splitbrain/php-archive
+duration: 0.048066854476929
+
+$ php bench.php
+Start using PharData
+duration: 0.68217706680298
+
+
+Start using splitbrain/php-archive
+duration: 0.045325040817261
+
+```
+
+## tested on ubuntu18
+
+```bash
+php -v
+PHP 7.2.34-2+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Oct 10 2020 19:44:20) ( NTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
+    with Zend OPcache v7.2.34-2+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies
+    with Xdebug v2.9.8, Copyright (c) 2002-2020, by Derick Rethans
+    with blackfire v1.44.0~linux-x64-non_zts72, https://blackfire.io, by Blackfire
+
+k$ php bench.php
+Start using PharData
+duration: 0.7270200252533
+
+
+Start using splitbrain/php-archive
+duration: 0.055887937545776
+
+
+$ php bench.php
+Start using PharData
+duration: 0.69905304908752
+
+
+Start using splitbrain/php-archive
+duration: 0.054063081741333
+
+
+$ php bench.php
+Start using PharData
+duration: 0.64250612258911
+
+
+Start using splitbrain/php-archive
+```
